@@ -1,0 +1,203 @@
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/Parisb&w-bg.jpg"); /*changed background image*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+}
+
+.center {
+	width: 50%; /*---This is for responsiveness---*/
+    min-width: 600px;
+	padding: 2%;
+    margin: 40px auto; /*halved margin because I took logo out of center div*/
+ 	background: rgba(53, 46, 53, 0.75); /*this uses opacity of 75% for the background color*/
+	border-radius: 25px;
+	text-align: center;
+	/*--removed dashed white border--*/
+}
+
+.contact {
+	width: 40%; /*---This is for responsiveness---*/
+	width: 300px;
+    min-width: 300px;
+	padding: 2%;
+	background: fixed rgba(0, 0, 0, 0.75);
+	border-bottom-right-radius: 25px;
+    margin: 0 auto; 
+	position: fixed;
+	text-align: center;
+}
+
+#logo {
+	width: 400px; /*-----This is for responsiveness-----*/
+	margin-top: 100px;
+	margin-bottom: 10px;
+	/*removed border*/
+	text-align: center;
+}
+
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: highgate,sans-serif;
+font-weight: 900;
+font-style: normal;
+	font-size: 2.2em;
+    margin: 0px auto 10px auto;
+    color: #fff;
+}
+
+h2 {
+	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	 font-family: highgate,sans-serif;
+font-weight: 900;
+font-style: normal;
+	font-size: 2em;
+    line-height: 1.4;
+    color: rgb(255, 255, 255);
+    padding: 0px 0px;
+    margin: 0px auto 25px auto;
+}
+
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: input-mono,monospace;
+font-weight: 300;
+font-style: normal;
+border: solid black;
+border-radius: 25px; /*added border around text*/
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff;
+	margin-top: 0.3em;
+}
+nav{
+	font-family: highgate,sans-serif;
+	font-size: 2em;
+	font-weight: 700;
+	width: 400px;
+	margin: 0 auto;
+	border-width: 3px 0;
+	text-align: center;
+	margin-top: 0.5em;
+}  
+    
+nav li{
+	display: inline;
+}
+
+nav a{
+	display: inline-block;
+	padding: 10px;
+}
+
+a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover{
+	color: rgba(169, 0, 178);
+	background: black;
+}
+
+/*this is a separate nav that controls the email and linkedin links*/
+nav1{
+	font-family: highgate,sans-serif;
+	font-size: 2em;
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 2em;
+}  
+    
+nav1 ul{ /*this is to space out the links in my top left nav bar*/
+	list-style: none;
+	margin: 0 2px;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav1 li{
+	display: inline;
+}
+
+nav1 a{
+	display: inline-block;
+	padding: 10px;
+}
+
+nav1 a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav1 a:hover{
+	color: black;
+	background: rgba(169, 0, 178);
+}
